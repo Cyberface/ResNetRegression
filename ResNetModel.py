@@ -88,7 +88,7 @@ def ResNet50Regression(input_dim=1, output_dim=1, width=16, n_layers=2, bn=False
     x = identity_block(x, width, bn=bn)
     x = identity_block(x, width, bn=bn)
 
-    for i in range(len(n_layers)):
+    for i in range(n_layers):
         x = dens_block(x, width, bn=bn)
         x = identity_block(x, width, bn=bn)
         x = identity_block(x, width, bn=bn)
