@@ -70,7 +70,7 @@ def dens_block(input_tensor,units):
 	return x
 
 
-def ResNet50Regression():
+def ResNet50Regression(Res_input):
 	"""Instantiates the ResNet50 architecture.
 	# Arguments        
 		input_tensor: optional Keras tensor (i.e. output of `layers.Input()`)
@@ -78,7 +78,7 @@ def ResNet50Regression():
 	# Returns
 		A Keras model instance.
 	"""
-	Res_input = layers.Input(shape=(7,))
+# 	Res_input = layers.Input(shape=(7,))
 
 	width = 16
 
